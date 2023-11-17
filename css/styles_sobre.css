@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --hero-image: url(../img/hero.jpg);
+    --header-color: #24252a;
+    --marketing-black-backgroud: radial-gradient(#000, #222111);
+    --marketing-white-background: #fff;
+    --footer-color: #24252a;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    filter: opacity(0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#app-title,
+#about,
+#products {
+    color: #fff;
+}
+
+#app-title {
+    font-family: 'regular';
+    margin: 0;
+}
+
+#about,
+#products {
+    font-family: 'thin';
+    font-size: 18px;
+    text-decoration: flip 3s infinite;
+}
+
+#about:hover,
+#proucts:hover {
+    color: #ccc;
+}
+
+#about {
+    margin: 0 20px 0 auto;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--hero-image);
+    height: 500px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+}
+#slogan {
+    text-align: center;
+}
+#slogan span {
+      position: relative;
+      display: inline-block;
+      font-family: "regular";
+      font-size: 62px;
+      font-weight: bold;
+      letter-spacing: -5px;
+      animation: flip 3s infinite;
+      animation-timing-function: ease-out;
+      animation-delay: calc(100ms * var(--i));
+}
+
+#hero-text h1 {
+    text-align: center;
+    font-family: "regular";
+    font-size: 62px;
+}
+
+#hero-text p {
+    text-align: center;
+    font-family: 'italic';
+    font-size: 30px;
+}
+
+.marketing-black, .marketing-white {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-title, .white-description {
+ color: #fff;
+}
+
+.marketing-black {
+ background: var(--marketing-black-backgroud);
+}
+
+.white-title {
+    font-family: 'regular';
+    font-size: 54px;
+}
+
+.white-description, .black-description {
+    font-family: 'thin';
+    font-size: 32px;
+}
+
+.product {
+    width: 30%;
+}
+
+.know-more {
+    margin: 40px 0;
+    background-color: #038aff;
+    border: none;
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'regular';
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.marketing-white{
+    background: var(--marketing-black-backgroud);
+}
+
+footer{
+    background-color: var(--footer-color);
+    padding: 10px 20px;
+}
+
+footer p {
+    color: #aaa;
+    font-family: 'thin';
+    font-size: 14px;
+    text-align: center;
+}
